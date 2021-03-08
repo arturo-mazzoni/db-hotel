@@ -1,0 +1,14 @@
+1) /*Conta gli ospiti raggruppandoli per anno di nascita*/
+
+SELECT COUNT(`id`), `date_of_birth`
+FROM `ospiti` 
+GROUP BY `date_of_birth`
+_________________________________________________________________________________________________________________________________________
+
+2) /*Somma i prezzi dei pagamenti raggruppandoli per status.*/
+
+SELECT SUM(`PRICE`), `status`
+FROM `pagamenti`
+GROUP BY `status`
+_________________________________________________________________________________________________________________________________________
+
